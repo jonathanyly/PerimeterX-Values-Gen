@@ -17,7 +17,7 @@ PX Values are also a subject to change.
 ```javascript
    // To create the encoded payload you can do the following:
    // payload parsed as string, "" is empty sts as its returned after first post request
-   var firstPayloadEncoded = obfuscatePayload(payload, uuid, "")
+   var firstPayloadEncoded = encodePayload(payload, uuid, "")
 ```
 
 ## Encode Second Payload
@@ -26,7 +26,7 @@ PX Values are also a subject to change.
    // To create the encoded second payload you can do the following:
    // payload parsed as string, "" is empty sts as its returned after first post request
    // sts can be found in response json from first post request
-   var secondpayloadEncoded = obfuscatePayload(secondPayload, uuid, sts)
+   var secondpayloadEncoded = encodePayload(secondPayload, uuid, sts)
 ```
 
 ## Create dynamic Values
